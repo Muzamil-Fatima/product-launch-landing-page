@@ -71,6 +71,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ```
 
-> **Tip:** Don’t forget to replace `Muzamil-Fatima` and your email in the relevant places.
-
+> **Tip:** `Muzamil-Fatima` 
 
