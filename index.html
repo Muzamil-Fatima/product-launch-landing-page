@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Launch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exciting New Product Coming Soon!</h1>
+            <p>Sign up to get notified when we launch</p>
+        </header>
+
+        <div class="product-section">
+            <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Amazing New Product</h2>
+                <p>This product will revolutionize the way you work and play. Be the first to get your hands on it.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Innovative Design</li>
+                    <li><i class="fas fa-check"></i> Enhanced Performance</li>
+                    <li><i class="fas fa-check"></i> User-Friendly Interface</li>
+                </ul>
+                <div class="countdown">
+                    <p>Launch in:</p>
+                    <div id="timer">
+                        <span id="days">00</span>d
+                        <span id="hours">00</span>h
+                        <span id="minutes">00</span>m
+                        <span id="seconds">00</span>s
+                    </div>
+                </div>
+                <button id="notify-btn">Notify Me</button>
+            </div>
+        </div>
+
+        <div id="notify-form" class="hidden">
+            <form>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="text" id="name" placeholder="Your name" required>
+                <select id="interest" required>
+                    <option value="">Select your interest</option>
+                    <option value="personal">Personal Use</option>
+                    <option value="business">Business Use</option>
+                </select>
+                <button type="submit" id="submit-btn">Notify Me</button>
+            </form>
+        </div>
+
+        <section class="testimonials">
+            <h2>What Early Testers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"This product exceeded my expectations. Can't wait for the launch!"</p>
+                    <cite>- John Doe, Tech Enthusiast</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"A game-changer in the industry. Simply amazing!"</p>
+                    <cite>- Jane Smith, Industry Expert</cite>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Product Launch. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>

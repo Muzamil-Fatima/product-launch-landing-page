@@ -1,0 +1,248 @@
+/* Reset styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e8ecf1); /* Updated gradient background */
+    line-height: 1.6;
+    width: 100%;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1400px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+/* Header */
+header{
+    width: 100%;
+    margin-bottom: clamp(1.5rem, 5vw, 3rem);
+    padding: 1.5rem; /* Increased padding */
+    animation: slideDown 0.8s ease;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+header h1{
+    width: 100%;
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Increased font size */
+    color: #2a2a2a;
+    animation: slideIn 1s ease;
+}
+
+header p {
+    width: 100%;
+    font-size: clamp(1.2rem, 3.5vw, 1.4rem); /* Increased font size */
+    color: #4a4a4a;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Product section */
+.product-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased column width */
+    gap: 3rem; /* Increased gap */
+    margin: 3rem 0; /* Increased margin */
+    align-items: center;
+    animation: fadeIn 1.5s ease;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3rem; /* Increased padding */
+    border-radius: 15px;
+}
+
+.product-image{
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1); /* Enhanced shadow */
+    animation: scaleIn 1s ease;
+}
+
+.product-info h2{
+    width: 100%;
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem); /* Increased font size */
+    color: #2a2a2a;
+    margin-bottom: 1.5rem; /* Increased margin */
+    animation: slideIn 1.2s ease;
+}
+
+.product-info p{
+    width: 100%;
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem); /* Increased font size */
+    margin-bottom: 2rem; /* Increased margin */
+    color: #4a4a4a;
+    animation: fadeIn 1.4s ease;
+}
+
+/* Notify Form */
+.hidden {
+    display: none;
+}
+
+#notify-form{
+    width: 100%;
+    margin-top: 2rem; /* Increased margin */
+    animation: slideUp 1s ease;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem; /* Increased padding */
+    border-radius: 15px; /* Increased border radius */
+}
+
+#notify-form input{
+    width: 100%;
+    padding: 1rem; /* Increased padding */
+    max-width: 500px; /* Increased max-width */
+    margin: 0.8rem 0; /* Increased margin */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Increased border radius */
+    background: white;
+}
+
+#notify-form button{
+    width: 100%;
+    max-width: 250px; /* Increased max-width */
+    margin-top: 1.5rem; /* Increased margin */
+}
+
+/* Testimonials */
+.testimonial-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased column width */
+    gap: 2rem; /* Increased gap */
+    margin: 3rem 0; /* Increased margin */
+    animation: fadeIn 1.8s ease;
+}
+
+.testimonial {
+    width: 100%;
+    padding: 2rem; /* Increased padding */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* Enhanced shadow */
+    animation: scaleIn 1.5s ease;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    margin-top: clamp(3rem, 6vw, 5rem); /* Increased margin */
+    animation: fadeIn 1.5s ease;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px; /* Increased border radius */
+}
+
+footer p{
+    width: 100%;
+    color: #4a4a4a;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Increased font size */
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap */
+    align-items: center;
+    padding: 3rem 0; /* Increased padding */
+    animation: fadeIn 2s ease;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem; /* Increased gap */
+    justify-content: center;
+}
+
+.social-links a {
+    color: inherit;
+    text-decoration: none;
+    font-size: clamp(1.4rem, 3.5vw, 1.8rem); /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #2d5a2d;
+}
+
+/* Common Elements */
+button{
+    width: auto;
+    padding: clamp(0.8rem, 2.5vw, 1.3rem) clamp(1.5rem, 3.5vw, 2.5rem); /* Increased padding */
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem); /* Increased font size */
+    cursor: pointer;
+    background-color: #2d5a2d;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    transition: all 0.3s ease;
+    animation: bounceIn 1s ease;
+}
+
+button:hover{
+    background-color: #3d7a3d;
+    color: white;
+    transform: translateY(-3px); /* Increased transform */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #notify-form {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    #notify-form button {
+        margin-top: 0;
+    }
+}
