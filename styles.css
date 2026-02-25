@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Base styles */
 body{
     font-family: Arial, sans-serif;
@@ -12,7 +11,6 @@ body{
     line-height: 1.6;
     width: 100%;
 }
-
 /* Container */
 .container{
     width: 100%;
@@ -21,7 +19,6 @@ body{
     padding: 1rem;
     animation: fadeIn 1s ease;
 }
-
 /* Header */
 header{
     width: 100%;
@@ -31,7 +28,6 @@ header{
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
-
 header h1{
     width: 100%;
     font-size: clamp(2.5rem, 6vw, 4rem); /* Increased font size */
@@ -44,6 +40,7 @@ header p {
     font-size: clamp(1.2rem, 3.5vw, 1.4rem); /* Increased font size */
     color: #4a4a4a;
     animation: fadeIn 1.2s ease;
+
 }
 
 /* Product section */
@@ -51,8 +48,8 @@ header p {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased column width */
-    gap: 3rem; /* Increased gap */
-    margin: 3rem 0; /* Increased margin */
+    gap: 3rem; 
+    margin: 3rem 0; 
     align-items: center;
     animation: fadeIn 1.5s ease;
     background: rgba(255, 255, 255, 0.8);
